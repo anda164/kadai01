@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   
+        参考：QuaggaJSを使ったバーコードリーダ実装
+        https://ameblo.jp/white-rabbit-0925/entry-12579659224.html
+
+    -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>おかいものジャンケン</title>
+</head>
+<body>
+    <h1>おかいものジャンケン</h1>
+    <h2>グーがグーなおかいもの体験</h2>
+
+    <div id="photo-area" class="viewport"></div>
+
+    <div id="goo" display="hidden"></div>
+    <button class="button gp_clear">Clear</button>
+    
+    <h3>ルール：</h3>
+    <ol>
+        <li>商品のバーコードを読み込み、３の倍数であれば”Goo”!! Gooポイントを進呈します。</li>
+        <li>獲得ポイントに応じて、数字が増えた満足感が得られます。</li>
+        <li>Clearボタンを押すと、Gooポイントが消去され、0ポイントに戻ります。</li>
+        <li>今のところ、同じ商品を読んでも無限にカウントされます。</li>
+        <li>白地に黒のバーコード以外は苦手です。</li>
+        
+
+    </ol>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="js/quagga.js" type="text/javascript"></script>
+
+    <script src="js/janken.js" type="text/javascript"></script>
+
+    <footer>
+        おかいものジャンケン 〜 Special Thanks -  
+        <a href="https://ameblo.jp/white-rabbit-0925/entry-12579659224.html">
+        QuaggaJSを使ったバーコードリーダ
+        </a>
+    </footer>
+    
+</body>
+</html>
